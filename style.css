@@ -1,0 +1,324 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+
+body {
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+
+    background: #050505;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+/* Background */
+
+.background {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -3;
+
+    background-image:
+        url("img/justice-league.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    transform: scale(1.1);
+
+    filter: blur(15px);
+
+}
+
+
+
+/* Dark layer */
+
+.background-dark {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .85),
+            rgba(0, 0, 0, .45),
+            rgba(0, 0, 0, .8)
+        );
+
+}
+
+
+
+/* Swiper */
+
+.swiper {
+
+    width: 90%;
+
+    height: 650px;
+
+}
+
+
+
+/* Slide */
+
+.swiper-slide {
+
+    width: 600px;
+
+    height: 520px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 30px;
+
+    background: #111;
+
+}
+
+
+
+/* Image */
+
+.swiper-slide > img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+
+/* Gradient */
+
+.swiper-slide::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            transparent 35%,
+            rgba(0, 0, 0, .9)
+        );
+
+}
+
+
+
+/* Content */
+
+.content {
+
+    position: absolute;
+
+    left: 35px;
+
+    right: 25px;
+
+    bottom: 40px;
+
+    z-index: 2;
+
+    color: white;
+
+}
+
+
+
+/* Title */
+
+.content h1 {
+
+    font-size: 38px;
+
+    line-height: 1;
+
+    margin-bottom: 15px;
+
+}
+
+
+
+/* Character */
+
+.content h1 span {
+
+    display: inline-block;
+
+}
+
+
+
+/* Paragraph */
+
+.content p {
+
+    color: #ddd;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+/* Button */
+
+.content button {
+
+    border: none;
+
+    outline: none;
+
+    padding: 13px 28px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: black;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+
+.content button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* Navigation */
+
+.swiper-button-next,
+
+.swiper-button-prev {
+
+    color: white;
+
+}
+
+
+
+/* Pagination */
+
+.swiper-pagination-bullet {
+
+    background: white;
+
+    opacity: .5;
+
+}
+
+
+
+.swiper-pagination-bullet-active {
+
+    opacity: 1;
+
+}
+
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .swiper {
+
+        width: 100%;
+
+        height: 600px;
+
+    }
+
+
+    .swiper-slide {
+
+        width: 280px;
+
+        height: 440px;
+
+    }
+
+
+    .content {
+
+        left: 25px;
+
+        bottom: 30px;
+
+    }
+
+
+    .content h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .swiper-button-next,
+
+    .swiper-button-prev {
+
+        display: none;
+
+    }
+
+}
