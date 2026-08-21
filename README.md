@@ -2,7 +2,7 @@
 
 ### A Cinematic & Responsive Slider Built with Swiper, GSAP & Vanilla JavaScript
 
-![Swiper GSAP Slider Preview](src/img/swipersliderimg.png)
+![Swiper GSAP Slider Preview](swipersliderimg.png)
 
 > A modern cinematic movie slider combining **Swiper's powerful slider engine** with **GSAP animations** to create smooth, dynamic and immersive slide transitions.
 
